@@ -4,6 +4,46 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TutorialEntityFrameworkCore.Models;
+
+/*
+ //Agregar
+using (var context = new SchoolDBContext())
+{
+    var std = new Student()
+    {
+        StudentId = 1,
+        FirstName = "Bill",
+        LastName = "Gates",
+        DateOfBirth = DateTime.Now,
+        Height = (decimal)1.52,
+        Weight = (decimal)110
+    };
+    context.Students.Add(std);
+
+    // or
+    // context.Add<Student>(std);
+
+    context.SaveChanges();
+}
+
+//Modificar
+using (var context = new SchoolDBContext())
+{
+    var std = context.Students.Find(1);
+    std.FirstName = "Yoe";
+    context.SaveChanges();
+}
+
+//Eliminar
+using (var context = new SchoolDBContext())
+{
+    var std = context.Students.Find(0);
+    context.Students.Remove(std);
+
+    context.SaveChanges();
+}
+*/
 
 namespace TutorialEntityFrameworkCore.Controllers
 {
